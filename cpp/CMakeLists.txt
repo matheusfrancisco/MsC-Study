@@ -1,0 +1,7 @@
+project(learn)
+set(CMAKE_CXX_STANDARD 14)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(learn opencv_eg.cpp)
+#include_directories(/opt/homebrew/Cellar/opencv/4.10.0_9/include/opencv4)
+target_link_libraries(learn ${OpenCV_LIBS})
