@@ -1,5 +1,6 @@
 
 cpp/build
+cpp/.cache/
 
 notebooks/python/venv
 */*/venv
