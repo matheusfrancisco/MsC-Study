@@ -1,38 +1,28 @@
-#include <vector>
-#include <string>
+#include <opencv2/opencv.hpp>
 #include <boost/filesystem.hpp>
-#include <iostream>
 
+using namespace std;
+using namespace cv;
 
+int main(int argc, char **argv) {
+  // Read the image file
+  Mat image = imread("../image.jpg");
+  // Check for failure
+  if (image.empty()) {
+    cout << "Could not open or find the image" << endl;
+    cin.get(); // wait for any key press
+    return -1;
+  }
 
+  String windowName = "E.G"; // Name of the window
 
-std::vector<std::string> list_files(const std::string& directory) {
-    std::vector<std::string> files;
-    fs::path dir_path(directory);
-    if (fs::exists(dir_path) && fs::is_directory(dir_path)) {
-        fs::directory_iterator end_iter;
-        for (fs::directory_iterator dir_itr(dir_path); dir_itr != end_iter; ++dir_itr) {
-            if (fs::is_regular_file(dir_itr->status())) {
-                std::string filename = dir_itr->path().filename().string();
-                if (!filename.empty() && filename[0] != '.') {
-                    files.push_back(filename);
-                }
-            }
-        }
-    } else {
-        std::cerr << "Directory does not exist or is not accessible: " << directory << std::endl;
-    }
-    return files;
-}
+  namedWindow(windowName); // Create a window
 
+  imshow(windowName, image); // Show our image inside the created window.
 
-int main() {
-    std::string directory = "./dataset/brain_tumor_dataset/Brain-Tumor/";
-    std::vector<std::string> files = list_files(directory);
+  waitKey(0); // Wait for any keystroke in the window
 
-    for (const auto& file : files) {
-        std::cout << file << std::endl;
-    }
+  destroyWindow(windowName); // destroy the created window
 
-    return 0;
+  return 0;
 }

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/learn.dir/opencv_eg.o"
-  "CMakeFiles/learn.dir/opencv_eg.o.d"
+  "CMakeFiles/learn.dir/main.o"
+  "CMakeFiles/learn.dir/main.o.d"
   "learn"
   "learn.pdb"
 )

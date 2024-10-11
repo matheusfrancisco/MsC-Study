@@ -1,6 +1,6 @@
 {:deps {org.scicloj/clay {:mvn/version "2-beta17"}}
- :paths ["src" "notebooks"]
+ :paths ["clay" "notebooks"]
 
   ;; clj -M:nrepl
- :nrepl {:extra-deps {cider/cider-nrepl {:mvn/version "0.30.0"}}
-         :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}}
+ :aliases {:nrepl {:extra-deps {cider/cider-nrepl {:mvn/version "0.30.0"}}
+                   :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}}}

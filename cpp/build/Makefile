@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp
+CMAKE_SOURCE_DIR = /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/build
+CMAKE_BINARY_DIR = /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/build/CMakeFiles /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/build/CMakeFiles /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,19 +130,19 @@ learn/fast:
 .PHONY : learn/fast
 
 # target to build an object file
-opencv_eg.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn.dir/build.make CMakeFiles/learn.dir/opencv_eg.o
-.PHONY : opencv_eg.o
+main.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn.dir/build.make CMakeFiles/learn.dir/main.o
+.PHONY : main.o
 
 # target to preprocess a source file
-opencv_eg.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn.dir/build.make CMakeFiles/learn.dir/opencv_eg.i
-.PHONY : opencv_eg.i
+main.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn.dir/build.make CMakeFiles/learn.dir/main.i
+.PHONY : main.i
 
 # target to generate assembly for a file
-opencv_eg.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn.dir/build.make CMakeFiles/learn.dir/opencv_eg.s
-.PHONY : opencv_eg.s
+main.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn.dir/build.make CMakeFiles/learn.dir/main.s
+.PHONY : main.s
 
 # Help Target
 help:
@@ -153,9 +153,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... learn"
-	@echo "... opencv_eg.o"
-	@echo "... opencv_eg.i"
-	@echo "... opencv_eg.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

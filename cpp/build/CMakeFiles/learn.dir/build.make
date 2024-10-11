@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp
+CMAKE_SOURCE_DIR = /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/build
+CMAKE_BINARY_DIR = /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/learn.dir/depend.make
@@ -69,28 +69,28 @@ include CMakeFiles/learn.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/learn.dir/flags.make
 
-CMakeFiles/learn.dir/opencv_eg.o: CMakeFiles/learn.dir/flags.make
-CMakeFiles/learn.dir/opencv_eg.o: /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/opencv_eg.cpp
-CMakeFiles/learn.dir/opencv_eg.o: CMakeFiles/learn.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/learn.dir/opencv_eg.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/learn.dir/opencv_eg.o -MF CMakeFiles/learn.dir/opencv_eg.o.d -o CMakeFiles/learn.dir/opencv_eg.o -c /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/opencv_eg.cpp
+CMakeFiles/learn.dir/main.o: CMakeFiles/learn.dir/flags.make
+CMakeFiles/learn.dir/main.o: /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/main.cpp
+CMakeFiles/learn.dir/main.o: CMakeFiles/learn.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/learn.dir/main.o"
+	/opt/homebrew/Cellar/bear/3.1.5_2/lib/bear/wrapper.d/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/learn.dir/main.o -MF CMakeFiles/learn.dir/main.o.d -o CMakeFiles/learn.dir/main.o -c /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/main.cpp
 
-CMakeFiles/learn.dir/opencv_eg.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/learn.dir/opencv_eg.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/opencv_eg.cpp > CMakeFiles/learn.dir/opencv_eg.i
+CMakeFiles/learn.dir/main.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/learn.dir/main.i"
+	/opt/homebrew/Cellar/bear/3.1.5_2/lib/bear/wrapper.d/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/main.cpp > CMakeFiles/learn.dir/main.i
 
-CMakeFiles/learn.dir/opencv_eg.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/learn.dir/opencv_eg.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/opencv_eg.cpp -o CMakeFiles/learn.dir/opencv_eg.s
+CMakeFiles/learn.dir/main.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/learn.dir/main.s"
+	/opt/homebrew/Cellar/bear/3.1.5_2/lib/bear/wrapper.d/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/main.cpp -o CMakeFiles/learn.dir/main.s
 
 # Object files for target learn
 learn_OBJECTS = \
-"CMakeFiles/learn.dir/opencv_eg.o"
+"CMakeFiles/learn.dir/main.o"
 
 # External object files for target learn
 learn_EXTERNAL_OBJECTS =
 
-learn: CMakeFiles/learn.dir/opencv_eg.o
+learn: CMakeFiles/learn.dir/main.o
 learn: CMakeFiles/learn.dir/build.make
 learn: /opt/homebrew/lib/libopencv_gapi.4.10.0.dylib
 learn: /opt/homebrew/lib/libopencv_stitching.4.10.0.dylib
@@ -128,6 +128,8 @@ learn: /opt/homebrew/lib/libopencv_wechat_qrcode.4.10.0.dylib
 learn: /opt/homebrew/lib/libopencv_xfeatures2d.4.10.0.dylib
 learn: /opt/homebrew/lib/libopencv_xobjdetect.4.10.0.dylib
 learn: /opt/homebrew/lib/libopencv_xphoto.4.10.0.dylib
+learn: /opt/homebrew/lib/libboost_system-mt.dylib
+learn: /opt/homebrew/lib/libboost_filesystem-mt.dylib
 learn: /opt/homebrew/lib/libopencv_shape.4.10.0.dylib
 learn: /opt/homebrew/lib/libopencv_highgui.4.10.0.dylib
 learn: /opt/homebrew/lib/libopencv_datasets.4.10.0.dylib
@@ -148,8 +150,9 @@ learn: /opt/homebrew/lib/libopencv_flann.4.10.0.dylib
 learn: /opt/homebrew/lib/libopencv_photo.4.10.0.dylib
 learn: /opt/homebrew/lib/libopencv_imgproc.4.10.0.dylib
 learn: /opt/homebrew/lib/libopencv_core.4.10.0.dylib
+learn: /opt/homebrew/lib/libboost_atomic-mt.dylib
 learn: CMakeFiles/learn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable learn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable learn"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/learn.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -161,6 +164,6 @@ CMakeFiles/learn.dir/clean:
 .PHONY : CMakeFiles/learn.dir/clean
 
 CMakeFiles/learn.dir/depend:
-	cd /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/build /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/build /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/notebooks/cpp/build/CMakeFiles/learn.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/build /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/build /Users/matheus.machado/m/msc/Msc-Computer-Vision-And-Image-Processing/cpp/build/CMakeFiles/learn.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/learn.dir/depend
 
