@@ -3,6 +3,7 @@
 
 using namespace std;
 using namespace cv;
+//visualize image on opencv window
 
 int main(int argc, char **argv) {
   // Read the image file

@@ -1,7 +1,9 @@
-
+Data/MNIST
+Data/*
 cpp/build
 cpp/.cache/
 
+cs231n/assignment1/
 notebooks/python/venv
 */*/venv
 venv
