@@ -3,6 +3,11 @@ Data/*
 cpp/build
 cpp/.cache/
 
+medical_analysis/rsna-*
+medical_analysis/pneumonia_classification/data/
+medical_analysis/pneumonia_classification/logs/
+medical_analysis/pneumonia_classification/weights
+
 cs231n/assignment1/
 notebooks/python/venv
 */*/venv
