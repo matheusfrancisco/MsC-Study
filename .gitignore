@@ -3,6 +3,14 @@ Data/*
 cpp/build
 cpp/.cache/
 
+cs231n/class1/datasets/cifar-10-batches-py/
+cs231n/class1/datasets/cifar-10-python.tar.gz
+*/cs231n/*/*/.ipynb_checkpoints
+*/cs231n/*/.ipynb_checkpoints
+*/cs231n/class1/datasets/cifar-10-batches-py/
+*/cs231n/class1/datasets/cifar-10-batches-py.tar.gz
+*/*/*/.ipynb_checkpoints
+
 medical_analysis/rsna-*
 medical_analysis/pneumonia_classification/data/
 medical_analysis/pneumonia_classification/logs/
