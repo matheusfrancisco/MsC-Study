@@ -1,6 +1,7 @@
 Data/MNIST
 Data/*
-cpp/build
+cpp*/build
+cpp_opencv/build/*
 cpp/.cache/
 
 cs231n/class1/datasets/cifar-10-batches-py/
